@@ -7,6 +7,10 @@ public class Task9 {
     Изменить пример с суммой чисел таким образом, чтобы рассчитывалась не сумма,
     а произведение, т.е. факториал числа
      */
+
+    /*
+    @Pavlo FIXME: Решение верно
+    */
     public static void main(String[] args) {
 
         int factorial = (int) (Math.random() * 10);

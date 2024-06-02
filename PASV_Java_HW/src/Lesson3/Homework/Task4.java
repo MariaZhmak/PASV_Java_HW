@@ -9,6 +9,10 @@ public class Task4 {
     любого 4-х значного натурального числа n.
     */
 
+    /*
+    @Pavlo FIXME: Решение верно. Также можно написать алгоритм выписывающий числа в
+            обратном направлении
+    */
     public static void main(String[] args) {
         System.out.println("Enter any 4-digit number...");
 

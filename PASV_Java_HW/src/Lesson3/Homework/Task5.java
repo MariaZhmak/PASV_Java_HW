@@ -5,7 +5,13 @@ import java.util.Scanner;
 public class Task5 {
 
     // Дано любое натуральное 4-х значное число. Верно ли, что все цифрв числа различны?
-
+    /*
+    @Pavlo FIXME: Решение верно.
+            Оператор или можно использовать много раз в одном if
+            if (firstNum == secondNum || firstNum == thirdNum || firstNum == fourthNum ||
+            secondNum == thirdNum || secondNum == fourthNum || thirdNum == fourthNum)
+            Придумайте алгоритм сравнения всех чисел со всеми используя вложенные циклы
+    */
     public static void main(String[] args) {
 
         int natNum = 6752;
