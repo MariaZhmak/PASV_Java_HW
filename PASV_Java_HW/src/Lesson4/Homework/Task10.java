@@ -7,6 +7,9 @@ public class Task10 {
     Посчитать факториал числа в границах от 10 до 15 (не используя рекурсию).
      */
 
+    /*
+    @Pavlo FIXME: Решение верно
+    */
     public static void main(String[] args) {
 
         int num = 10;
