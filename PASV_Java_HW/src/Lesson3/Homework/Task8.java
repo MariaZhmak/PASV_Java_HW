@@ -10,6 +10,10 @@ public class Task8 {
     Вывести это число, добавив к нему слово «рублей» в правильном падеже.
      */
 
+    /*
+    @Pavlo FIXME: Решение не верно для чисел 11-14
+            нужно учитывать исключения для данных чисел
+    */
     public static void main(String[] args) {
 
         Random random = new Random();

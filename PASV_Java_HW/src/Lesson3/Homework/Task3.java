@@ -9,7 +9,17 @@ public class Task3 {
     D) недель + дней + часов + минут + секунд.
     по аналогии с примером выше.
      */
-
+    /*
+    @Pavlo FIXME: Решение верно.
+            Для более аккуратного и форматированного вывода данных в консоль Java,
+                мы можем использовать метод printf из класса System.out
+            System.out.printf("Задание А): %d минут %d секунд%n", totalMinutes, leftSeconds);
+            System.out.printf("Задание B): %d часов %d минут %d секунд%n", totalHours, leftMinutes, leftSeconds);
+            System.out.printf("Задание C): %d дней %d часов %d минут %d секунд%n", totalDays, leftHours, leftMinutes, leftSeconds);
+            System.out.printf("Задание D): %d недель %d дней %d часов %d минут %d секунд%n", totalWeeks, leftDays, leftHours, leftMinutes, leftSeconds);
+                %d — десятичное целое число
+                %n — перенос строки
+    */
     public static void main(String[] args) {
         int s = 4500;
         int sec =  s % 60;

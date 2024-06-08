@@ -9,6 +9,9 @@ public class Task7 {
     определить, можно ли его полностью закрыть круглой картонкой радиусом r.
      */
 
+    /*
+    @Pavlo FIXME: Решение верно
+    */
     public static void main(String[] args) {
 
         System.out.println("Enter the size of side A:");

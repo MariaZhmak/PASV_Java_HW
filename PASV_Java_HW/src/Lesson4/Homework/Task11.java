@@ -8,6 +8,10 @@ public class Task11 {
 делится без остатка только на 1 и себя.
      */
 
+    /*
+    @Pavlo FIXME: Решение верно
+    */
+
     public static void main(String[] args) {
 
         System.out.println("Enter a number : ");
