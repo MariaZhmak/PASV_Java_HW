@@ -7,6 +7,9 @@ public class Task13 {
     Создать последовательность случайных чисел, найти и вывести наибольшее из них.
      */
 
+    /*
+    @Pavlo FIXME: Решение верно
+    */
     public static void main(String[] args) {
 
         int[] nums = new int[10];

@@ -12,6 +12,9 @@ public class Task17 {
     1 1 1 1 1
      */
 
+    /*
+    @Pavlo FIXME: Решение верно.
+    */
     public static void main(String[] args) {
 
         int matrix[][] = new int[5][5];

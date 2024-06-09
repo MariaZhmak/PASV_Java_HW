@@ -9,6 +9,9 @@ public class Task15 {
 
      */
 
+    /*
+    @Pavlo FIXME: Решение верно
+    */
     public static void main(String[] args) {
 
         int[] array = new int[10];
