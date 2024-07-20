@@ -23,10 +23,16 @@ public class Task6 {
         Scanner scanner = new Scanner(System.in);
         int myNum = scanner.nextInt();
 
-        if (myNum / 100 == 0) {
-            System.out.println(myNum + " is not three-digit number");
-        } else {
+//        if (myNum / 100 == 0) {
+//            System.out.println(myNum + " is not three-digit number");
+//        } else {
+//            System.out.println(myNum + " is a three-digit number");
+//        }
+
+        if (myNum >= 100 && myNum <=999) {
             System.out.println(myNum + " is a three-digit number");
+        } else {
+            System.out.println(myNum + " is not three-digit number");
         }
 
         if (myNum % 10 == 7) {

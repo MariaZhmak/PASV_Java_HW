@@ -21,19 +21,35 @@ public class Task3 {
                 %n — перенос строки
     */
     public static void main(String[] args) {
-        int s = 4500;
-        int sec =  s % 60;
-        int m = (s - sec) / 60;
-        int min = m % 60;
-        int h = (m - min) / 60;
-        int hours = h % 24;
-        int d = (h - hours) / 24;
-        int days = d % 7;
-        int w = (d - days) / 7;
-        System.out.println(m + " minutes " + sec + " seconds");
-        System.out.println(h + " hours " + min + " minutes " + sec + " seconds ");
-        System.out.println(d + " days " + hours + " hours " + min + " minutes " + sec + " seconds ");
-        System.out.println(w + " week " + days + " days " + hours + " hours " + min + " minutes " + sec + " seconds ");
+//        int s = 4500;
+//        int sec =  s % 60;
+//        int m = (s - sec) / 60;
+//        int min = m % 60;
+//        int h = (m - min) / 60;
+//        int hours = h % 24;
+//        int d = (h - hours) / 24;
+//        int days = d % 7;
+//        int w = (d - days) / 7;
+//        System.out.println(m + " minutes " + sec + " seconds");
+//        System.out.println(h + " hours " + min + " minutes " + sec + " seconds ");
+//        System.out.println(d + " days " + hours + " hours " + min + " minutes " + sec + " seconds ");
+//        System.out.println(w + " week " + days + " days " + hours + " hours " + min + " minutes " + sec + " seconds ");
+
+        int totalSeconds = 4500;
+        int leftSeconds = totalSeconds % 60;
+        int totalMinutes = (totalSeconds - leftSeconds) / 60;
+        int leftMinutes = totalMinutes % 60;
+        int totalHours = (totalMinutes - leftMinutes) / 60;
+        int leftHours = totalHours % 24;
+        int totalDays = (totalHours - leftHours) / 24;
+        int leftDays = totalDays % 7;
+        int totalWeeks = (totalDays - leftDays) / 7;
+
+        System.out.printf("Задание А: %d minutes %d seconds%n", totalMinutes, leftSeconds);
+        System.out.printf("Задание В: %d hours %d minutes %d seconds%n", totalHours, leftMinutes, leftSeconds);
+        System.out.printf("Задание С: %d days %d hours %d minutes %d seconds%n", totalDays, leftHours, leftMinutes, leftSeconds);
+        System.out.printf("Задание D: %d weeks %d days, %d hours, %d minutes, %d seconds%n", totalWeeks, leftDays, leftHours, leftMinutes, leftSeconds);
+
 
     }
 
