@@ -17,19 +17,30 @@ public class Task8 {
     public static void main(String[] args) {
 
         Random random = new Random();
-        int x = random.nextInt();
+        int num = Math.abs(random.nextInt(10000));
 
-        if (x % 10 == 1) {
-            System.out.println(x + " рубль");
-        } else if (x % 10 == -1) {
-            System.out.println(x + " рубль");
-        } else if (x % 10 == 2 || x % 10 == 3 || x % 10 == 4) {
-            System.out.println(x + " рубля");
-        } else if (x % 10 == -2 || x % 10 == -3 || x % 10 == -4) {
-            System.out.println(x + " рубля");
+        if (num % 10 == 1 && num % 100 != 11) {
+            System.out.println(num + " рубль");
+        } else if (num % 10 >= 2 && num % 10 <= 4 && (num % 100 < 10 || num % 100 >= 20)) {
+            System.out.println(num + " рубля");
         } else {
-            System.out.println(x + " рублей");
+            System.out.println(num + " рублей");
         }
+
+//        Random random = new Random();
+//        int x = random.nextInt();
+//
+//        if (x % 10 == 1) {
+//            System.out.println(x + " рубль");
+//        } else if (x % 10 == -1) {
+//            System.out.println(x + " рубль");
+//        } else if (x % 10 == 2 || x % 10 == 3 || x % 10 == 4) {
+//            System.out.println(x + " рубля");
+//        } else if (x % 10 == -2 || x % 10 == -3 || x % 10 == -4) {
+//            System.out.println(x + " рубля");
+//        } else {
+//            System.out.println(x + " рублей");
+//        }
 
 
 
