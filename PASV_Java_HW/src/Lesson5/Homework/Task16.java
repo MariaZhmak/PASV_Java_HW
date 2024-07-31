@@ -1,7 +1,6 @@
 package Lesson5.Homework;
 
 import java.util.Arrays;
-import java.util.Enumeration;
 
 public class Task16 {
     /*
@@ -31,10 +30,24 @@ public class Task16 {
             }
             System.out.println();
 
+        int maxIndex = 0;
+        int minIndex = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > array[maxIndex]) {
+                maxIndex = i;
+            }
+            if (array[i] < array[minIndex]) {
+                minIndex = i;
+            }
+        }
+        int sum = 0;
+        for (int i = Math.min(maxIndex, minIndex) + 1; i < Math.max(maxIndex, minIndex); i++) {
+            sum += array[i];
 
-            int sum = 0;
-            for (int j : array) {
-                sum += j;
+//
+//            int sum = 0;
+//            for (int j : array) {
+//                sum += j;
             }
             System.out.println("Sum of array elements: " + sum);
 
