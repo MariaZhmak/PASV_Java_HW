@@ -22,7 +22,7 @@ public class Task12 {
         System.out.println("Enter any positive integer: ");
         num = console.nextInt();
 
-        for (int i = 1; i <= num; i++) {
+        for (int i = 1; i <= (num*3); i++) {
             if (i % 3 == 0) {
                 sum += i;
             }
