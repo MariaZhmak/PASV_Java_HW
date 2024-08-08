@@ -11,12 +11,10 @@ public class Task24 {
      */
 
     public static class TimePeriod {
-        public TimePeriod() {
-        }
 
-        private int hours;
-        private int minutes;
-        private int seconds;
+        private final int hours;
+        private final int minutes;
+        private final int seconds;
 
         public TimePeriod(int totalSeconds) {
             this.hours = totalSeconds / 3600;
