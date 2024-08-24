@@ -14,6 +14,7 @@ public class Task8 {
     @Pavlo FIXME: Решение не верно для чисел 11-14
             нужно учитывать исключения для данных чисел
     */
+    // todo Решение задачи скорректировано
     public static void main(String[] args) {
 
         Random random = new Random();

@@ -13,6 +13,7 @@ public class Task12 {
             Данный код суммирует числа которые делятся на 3 от 1 до n.
             Если n == 3 код должен вернуть сумму 3 + 6 + 9
     */
+    // todo Решение задачи скорректировано
     public static void main(String[] args) {
 
         Scanner console = new Scanner(System.in);

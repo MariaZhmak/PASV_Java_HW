@@ -17,6 +17,8 @@ public class Task6 {
             Трехзначное число лежит в диапазоне от 100 до 999.
             Остальное верно.
     */
+    // todo Решение задачи скорректировано
+
     public static void main(String[] args) {
 
         System.out.println("Enter any number:");

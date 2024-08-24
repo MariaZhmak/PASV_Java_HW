@@ -13,7 +13,7 @@ public class Task5 {
             secondNum == thirdNum || secondNum == fourthNum || thirdNum == fourthNum)
             Придумайте алгоритм сравнения всех чисел со всеми используя вложенные циклы
     */
-
+// todo Решение задачи скорректировано
     public static boolean areAllDigitsDifferent(int number) {
         // Convert the number to a string
         String numberStr = String.valueOf(number);

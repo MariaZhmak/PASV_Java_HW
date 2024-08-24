@@ -20,6 +20,7 @@ public class Task3 {
                 %d — десятичное целое число
                 %n — перенос строки
     */
+    // todo Решение задачи скорректировано
     public static void main(String[] args) {
 //        int s = 4500;
 //        int sec =  s % 60;

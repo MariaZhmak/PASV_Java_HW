@@ -13,6 +13,7 @@ public class Task4 {
     @Pavlo FIXME: Решение верно. Также можно написать алгоритм выписывающий числа в
             обратном направлении
     */
+    // todo Решение задачи скорректировано
     public static void main(String[] args) {
         System.out.println("Enter any 4-digit number...");
 
