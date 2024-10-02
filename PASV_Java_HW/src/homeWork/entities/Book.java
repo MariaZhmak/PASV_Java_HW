@@ -88,7 +88,6 @@ public class Book {
                 ", year=" + year +
                 ", genre=" + genre +
                 ", available=" + isIssued +
-                ", bookUserId=" + bookUserId +
                 '}';
     }
-    }
+}

@@ -3,6 +3,7 @@ package homeWork;
 import homeWork.entities.Book;
 import homeWork.entities.User;
 import homeWork.enums.Genre;
+import homeWork.enums.Status;
 import homeWork.services.BookService;
 import homeWork.services.LibraryService;
 import homeWork.services.UserService;
@@ -195,7 +196,7 @@ public class Runner {
         System.out.println("Enter email:");
         String email = scanner.nextLine();
 
-        userService.addUser(new User(firstName, lastName, email, LocalDate.now()));
+        userService.addUser(new User(firstName, lastName, email));
         String user = String.valueOf(new User());
         System.out.println("User registered!");
         System.out.println("=============================================");

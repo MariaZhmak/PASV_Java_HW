@@ -1,9 +1,8 @@
 package homeWork.entities;
 
-import homeWork.entities.Book;
+import homeWork.enums.Status;
 
 import java.time.LocalDate;
-import java.util.List;
 
 public class User {
     int userId;
@@ -11,6 +10,7 @@ public class User {
     String lastName;
     String email;
     LocalDate registeredDate;  // Дата регистрации
+    Status status;
 
     public User() {
     }
@@ -21,19 +21,21 @@ public class User {
         this.email = email;
     }
 
-    public User(String firstName, String lastName, String email, LocalDate registeredDate) {
+    public User(String firstName, String lastName, String email, LocalDate registeredDate, Status status) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.registeredDate = registeredDate;
+        this.status = status;
     }
 
-    public User(int userId, String firstName, String lastName, String email, LocalDate registeredDate) {
+    public User(int userId, String firstName, String lastName, String email, LocalDate registeredDate, Status status) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.registeredDate = registeredDate;
+        this.status = status;
     }
 
     public int getUserId() {
@@ -76,6 +78,14 @@ public class User {
         this.registeredDate = registeredDate;
     }
 
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -83,7 +93,8 @@ public class User {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
-                ", registeredDate=" + registeredDate +
+                ", registeredDate=" + registeredDate + '\''+
+                ", status='" + status +
                 '}';
     }
 }
