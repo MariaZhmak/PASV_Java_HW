@@ -12,7 +12,7 @@ public class DBUser {
 
         String dbUser = "postgres";
         String dbPassword = "Moremore";
-        String dbUrl = "jdbc:postgresql://localhost:5432/users";
+        String dbUrl = "jdbc:postgresql://localhost:5432/library";
         String dbDriver = "org.postgresql.Driver";
 
         try (Connection conn = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
@@ -64,6 +64,26 @@ public class DBUser {
                 userProfiles.add(userProfile);
             }
             userProfiles.forEach(System.out::println);
+
+
+//            // PreparedStatement защищает от SQL иньекций (атаки злоумышленников)
+//            PreparedStatement preparedStatement = conn.prepareStatement("select * from user_profile_list where id = ? and first_name like ?");
+//            preparedStatement.setInt(1, 1);
+//            preparedStatement.setString(2, "Anna");
+//            ResultSet resultSet1 = preparedStatement.executeQuery();
+//
+//            User userProfile = new User();
+//
+//            while (resultSet1.next()) {
+//                userProfile.setUserId(resultSet1.getInt("id"));
+//                userProfile.setFirstName(resultSet1.getString("first_name"));
+//                userProfile.setLastName(resultSet1.getString("last_name"));
+//                userProfile.setEmail(resultSet1.getString("email"));
+//                userProfile.setRegisteredDate(resultSet1.getDate("registered_date").toLocalDate());
+//                userProfile.setStatus(Status.getStatus(resultSet1.getString("status")));
+//            }
+//            System.out.println(userProfile);
+
 
         }
 

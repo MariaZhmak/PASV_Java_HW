@@ -13,7 +13,7 @@ public class DBBook {
 
         String dbUser = "postgres";
         String dbPassword = "Moremore";
-        String dbUrl = "jdbc:postgresql://localhost:5432/books";
+        String dbUrl = "jdbc:postgresql://localhost:5432/library";
         String dbDriver = "org.postgresql.Driver";
 
         try (Connection conn = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
@@ -51,7 +51,7 @@ public class DBBook {
 //                System.out.println(resultSet.getString("is_issued"));
 //                System.out.println("======================================================================");
 //            }
-
+//
             ResultSet resultSet = statement.executeQuery("SELECT * FROM books_list");
 
             List<Book> bookShelfs = new ArrayList<>();
